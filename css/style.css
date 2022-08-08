@@ -1,0 +1,220 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+a, link{
+     color: black;
+     text-decoration: none;
+}
+body {
+     text-align: center;
+     list-style: none;
+     background: lightcyan;
+}
+
+header{
+     height: 70px;
+     border: 5px dashed black;
+}
+ul{
+     list-style: none;
+     display: flex;
+     justify-content: space-around;
+     font-weight: 800;
+}
+h1{
+     margin: 0;
+}
+
+.divOne h4{
+     border-bottom: solid 5px black;
+     font-size: 2rem;
+     width: 25px;
+}
+.divTwo{
+     font-size: 1.5rem;
+}
+
+.divTwo h5{
+     margin: 0 5%;
+     font-weight: bold;
+}
+
+.buttonOne{
+     width: 15%;
+     margin: auto;
+     margin-bottom: 5%;
+     border: solid 5px black;
+}
+
+h4{
+     color: rgba(0, 0, 0, 0);
+     margin-left:2px;
+     margin-right:2px;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+.divOne{
+     width: 90%;
+     margin: auto;
+     display: flex;
+     justify-content: space-around;
+     /* flex-flow: row wrap; */
+}
+.divTwo{
+     border: solid 5px black;
+     width: 40%;
+     margin: auto;
+     display: flex;
+     justify-content: space-around;
+     flex-flow: row wrap;
+}
+
+h2{
+     margin-bottom: 200px;
+     margin-left: 30px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.hidden{
+     visibility: hidden;
+}
+.none{
+     display: none;
+}
+
+.blur{
+     /* color: transparent; */
+     text-shadow: 0 0 5px #000;
+}
+.buttonTwo, .buttonThree{
+     position: absolute;
+     background: darkred;
+     width: 511px;
+     height: 160px;
+     top: 70%;
+     left: 30%;
+     border: 5px solid black;
+     color: black;
+     font-size: 3rem;
+}
+.buttonTwo h3{
+     width: fit-content;
+     padding: 0 0 0 35%;
+}
+.buttonThree{
+     background: darkgreen;
+}
+
+.buttonThree h3{
+     width: fit-content;
+     padding: 0 0 0 20%;
+}
+
+.win, .lose{
+     padding-top: 2%;
+}
+
+
+/*******************************************
+/*CREATED IMAGES
+/********************************************/
+
+.manAndHanger *{
+     position: absolute;
+     margin: 10px;
+}
+.manAndHanger{
+     position: absolute;
+     top: 20%;
+     left: 46.5%;
+}
+.hanger *, .body, .arm1, .arm2, .leg1, .leg2{
+     background: black;
+}
+.base{
+     width: 160px;
+     height: 10px;
+     top: 150px;
+     left: -70px;
+}
+.pole{
+     width: 10px;
+     height: 150px;
+}
+.top{
+     width: 80px;
+     height: 10px;
+}
+.rope{
+     width: 10px;
+     height: 20px;
+     left: 80px;
+}
+
+.head{
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     border: 9px solid black;
+     top: 18px;
+     left: 65px;
+}
+.body{
+     width: 7px;
+     height: 50px;
+     top: 50px;
+     left: 81px;
+}
+.arm1, .arm2{
+     width: 40px;
+     top: 60px;
+}
+.arm1{
+     height: 7px;
+     left: 50px;
+     transform: rotate(45deg);
+}
+.arm2{
+     height: 7px;
+     left: 79px;
+     transform: rotate(315deg);
+}
+.leg1, .leg2{
+     top: 110px;
+}
+.leg1{
+     width: 50px;
+     height: 7px;
+     left: 40px;
+     transform: rotate(-45deg);
+
+}
+.leg2{
+     width: 50px;
+     height: 7px;
+     left: 79px;
+     transform: rotate(-315deg);
+}

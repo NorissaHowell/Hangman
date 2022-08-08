@@ -1,0 +1,219 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+a, link{
+    color: black;
+    text-decoration: none;
+}
+body {
+    list-style: none;
+    background: lightcyan;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2{
+    margin-top: 25%;
+    font-size: 2rem;
+    border: 5px solid black;
+    width: fit-content;
+    margin: 25% 47% 0 47%;
+    padding: 1%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.blur{
+    /* color: transparent; */
+    text-shadow: 0 0 5px #000;
+}
+
+/*******************************************
+/*CREATED IMAGES
+/********************************************/
+.manAndHanger *{
+    position: absolute;
+    margin: 10px;
+}
+.manAndHanger{
+    position: absolute;
+    top: 20%;
+    left: 46.5%;
+}
+.hanger *, .body, .arm1, .arm2, .leg1, .leg2{
+    background: black;
+}
+.base{
+    width: 160px;
+    height: 10px;
+    top: 150px;
+    left: -70px;
+}
+.pole{
+    width: 10px;
+    height: 150px;
+}
+.top{
+    width: 80px;
+    height: 10px;
+}
+.rope{
+    width: 10px;
+    height: 20px;
+    left: 80px;
+}
+
+.head{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 9px solid black;
+    top: 18px;
+    left: 65px;
+}
+.body{
+    width: 7px;
+    height: 50px;
+    top: 50px;
+    left: 81px;
+}
+.arm1, .arm2{
+    width: 40px;
+    top: 60px;
+}
+.arm1{
+    height: 7px;
+    left: 50px;
+    transform: rotate(45deg);
+}
+.arm2{
+    height: 7px;
+    left: 79px;
+    transform: rotate(315deg);
+}
+.leg1, .leg2{
+    top: 110px;
+}
+.leg1{
+    width: 50px;
+    height: 7px;
+    left: 40px;
+    transform: rotate(-45deg);
+
+}
+.leg2{
+    width: 50px;
+    height: 7px;
+    left: 79px;
+    transform: rotate(-315deg);
+}
+
+
+
+.red{
+    background-color: red;
+}
+.darkBlue{
+    background-color: darkblue;
+}
+.white{
+    background-color: white;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 2px black solid;
+}
+
+.bubble1{
+    top: 15%;
+    left: 70%;
+}
+.bubble2{
+    top: 15%;
+    left: 50%;
+}
+.bubble3{
+    top: 15%;
+    left: 30%;
+}
+.bubble4{
+    top: 15%;
+    left: 10%;
+}
+.bubble5{
+    top: 50%;
+    left: 70%;
+}
+.bubble6{
+    top: 50%;
+    left: 50%;
+}
+.bubble7{
+    top: 50%;
+    left: 30%;
+}
+.bubble8{
+    top: 50%;
+    left: 10%;
+}
+.bubble9{
+    top: 90%;
+    left: 70%;
+}
+.bubble10{
+    top: 90%;
+    left: 50%;
+}
+.bubble11{
+    top: 90%;
+    left: 30%;
+}
+.bubble12{
+    top: 80%;
+    left: 10%;
+}
+.bubble13{
+    top: 15%;
+    left: 90%;
+}
+.bubble14{
+    top: 50%;
+    left: 90%;
+}
+.bubble15{
+    top: 90%;
+    left: 90%;
+}
